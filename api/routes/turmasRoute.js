@@ -7,5 +7,6 @@ router
   .get("/turmas/:id", TurmaController.buscarTurmaPorId)
   .post("/turmas", TurmaController.inserirTurma)
   .put("/turmas/:id", TurmaController.atualizarTurma)
-  .delete("/turmas/:id", TurmaController.apagarTurma);
+  .delete("/turmas/:id", TurmaController.apagarTurma)
+  .post("/turmas/:id/restaura", TurmaController.restaurarTurma);
 module.exports = router;
